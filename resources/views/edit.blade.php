@@ -22,9 +22,13 @@
             <!--- MENSAGEM DE CONFIRMAÇÂO DE SUCESSO --->
             @if (session('error'))
                 <div class="alert alert-danger" role="alert">
+                    @if(!is_array(session('error')))
+                    <li>{{session('error')}}</li>
+                    @else
                     @foreach (session('error') as $erro)
                         <li>{{ $erro }}</li>
                     @endforeach
+                    @endif
                 </div>
             @endif
             <!--- FIM MENSAGEM DE CONFIRMAÇÂO DE SUCESSO --->
@@ -125,7 +129,7 @@
                                             Produtos
                                         </div>
                                         <ul class="list-group list-group-flush ">
-                                            @foreach (json_decode($data->produtosPainel) as $produto)
+                                            @foreach (json_decode($data->produtos) as $produto)
                                                 <li class="list-group-item">{{ $produto->description }}</li>
                                             @endforeach
                                         </ul>

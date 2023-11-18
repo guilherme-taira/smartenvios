@@ -30,7 +30,7 @@
 
         body {
             margin-top: 20px;
-            background-color: #98048a;
+            background: #eee;
         }
 
         .btn {
@@ -93,7 +93,8 @@
             overflow: hidden;
             display: flex;
         }
-        .image{
+
+        .image {
             margin-right: 5px;
         }
     </style>

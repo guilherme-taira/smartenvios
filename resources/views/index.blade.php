@@ -71,7 +71,7 @@
                                                         <td class="image">
                                                             <div class="image-container">
                                                                 @if ($pedido->produtosPainel)
-                                                                    @foreach (json_decode($pedido->produtosPainel) as $image)
+                                                                    {{-- @foreach (json_decode($pedido->produtosPainel) as $image)
                                                                         @foreach ($image->pictures as $picture)
                                                                             <div>
                                                                                 <img src="{{ $picture->thumbs->{30}->http }}"
@@ -79,7 +79,7 @@
                                                                                     class="rounded border border-warning image">
                                                                             </div>
                                                                         @endforeach
-                                                                    @endforeach
+                                                                    @endforeach --}}
                                                                 @else
                                                                     <img src="https://www.bootdey.com/image/400x300/5F9EA0"
                                                                         class="img-thumbnail" alt="">

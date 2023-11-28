@@ -129,9 +129,11 @@
                                             Produtos
                                         </div>
                                         <ul class="list-group list-group-flush ">
+                                            @if(json_decode($data->produtosPainel))
                                             @foreach (json_decode($data->produtosPainel) as $produto)
                                                 <li class="list-group-item">{{ $produto->description }}</li>
                                             @endforeach
+                                            @endif
                                         </ul>
                                     </div>
 

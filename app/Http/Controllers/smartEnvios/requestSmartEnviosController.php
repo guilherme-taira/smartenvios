@@ -36,7 +36,7 @@ class requestSmartEnviosController extends Controller
         $tipoData = "Content-Type: multipart/form-data";
         $token = "token: {$this->getToken()}";
 
-        $cFile = new \CURLFile($this->getFile()->getRealPath(), $this->getFile()->getClientMimeType(), $this->getFile()->getClientOriginalName());
+        $cFile = new \CURLFile($this->getFile(), 'application/xml', 'arquivo_modificado.xml');
 
         $postData = [
             'file' => $cFile,

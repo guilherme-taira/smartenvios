@@ -151,6 +151,7 @@
                                 <form action="{{ route('uploadXml', ['id' => $data->Orderid]) }}" method="POST"
                                     enctype="multipart/form-data">
                                     @csrf
+                                    <input type="hidden" name="peso"  value="{{ $data->Peso }}" id="peso">
                                     <div class="mb-3 mt-2">
                                         <label for="validationCustom01" class="form-label">freight_order_id</label>
                                         <input type="text" name="freight_order_id" class="form-control"

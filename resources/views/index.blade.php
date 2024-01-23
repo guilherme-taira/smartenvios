@@ -41,7 +41,7 @@
                                 <!-- END FILTERS -->
                                 <!-- BEGIN RESULT -->
                                 <div class="col-md-9">
-                                    <h2> Pedidos <img src="https://smartenvios.com/wp-content/uploads/2023/01/536x156.png"
+                                    <h2> Pedidos 2.0<img src="https://smartenvios.com/wp-content/uploads/2023/01/536x156.png"
                                             width="200px" class="float-right"></h2>
                                     <hr>
                                     <!-- BEGIN SEARCH INPUT -->

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+
         .rounded-lg {
             border-radius: 1rem;
         }
@@ -30,8 +31,7 @@
 
         body {
             margin-top: 20px;
-            background: #eee;
-        }
+            background-color: rgb(155, 19, 155);
 
         .btn {
             margin-bottom: 5px;
